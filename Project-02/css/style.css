@@ -70,6 +70,55 @@ body {
     width: 65%;
 }
 
+.accommodation-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.accommodation-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.accommodation-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 30%;
+    height: 207px;
+}
+
+.accommodation-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.accommodation-cards .card-content {
+    width: 67%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.accommodation-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.accommodation-cards .card-subtitle {
+    margin: 0;
+}
+
+.accommodation-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Popular ***********/
 .popular {
     width: 32%;
