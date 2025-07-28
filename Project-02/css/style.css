@@ -34,6 +34,7 @@ body {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: box-shadow 0.2s;
 }
 
 .card img {
@@ -42,6 +43,19 @@ body {
 
 .card-title {
     font-size: 16px;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .euro {
@@ -56,6 +70,7 @@ body {
 .accommodation-and-popular {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 
 .accommodation-and-popular section {
@@ -66,7 +81,6 @@ body {
 }
 
 /****** Accommodation ***********/
-/* WIP: Styles for Accommodation and Popular section in progress */
 .accommodation {
     width: 65%;
 }
@@ -120,6 +134,22 @@ body {
     margin-bottom: 5px;
 }
 
+.show-more {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.show-more-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.show-more-link:hover{
+    color: var(--main-color);
+}
+
 /****** Popular ***********/
 .popular {
     width: 32%;
@@ -141,6 +171,13 @@ body {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.popular-cards .card-link {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .popular-cards .card-content {
