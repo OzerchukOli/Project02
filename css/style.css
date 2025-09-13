@@ -116,7 +116,6 @@ html, body {
 }
 
 .accommodation-cards .card-content {
-    width: 67%;
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -131,6 +130,7 @@ html, body {
 
 .accommodation-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 .accommodation-cards .card-rating {
