@@ -3,18 +3,21 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
 html, body { 
     min-width: 320px; 
 }
 
-.main-container { max-width: 1440px; margin: 0 auto; }
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
+.fa-solid {
     color: var(--main-color);
 }
 
@@ -65,7 +68,7 @@ html, body {
     font-weight: 700;
 }
 
-.neutralStar {
+#neutralStar {
     color: var(--main-bg-color)
 }
 
@@ -542,10 +545,6 @@ header{
 
 /****** Mobile ***********/
 @media (max-width: 768px) {
-    html { 
-        scroll-behavior: smooth; 
-    }
-
     body {
         margin: auto;
     }
@@ -606,12 +605,6 @@ header{
     }
 
     .main-nav li a:hover{
-        color: var(--main-color);
-        border-bottom-color: var(--main-color);
-    }
-
-    body:has(#accommodation-anchor:target) .main-nav a[href*="accommodation-anchor"],
-    body:has(#things-anchor:target) .main-nav a[href*="things-anchor"]{
         color: var(--main-color);
         border-bottom-color: var(--main-color);
     }
