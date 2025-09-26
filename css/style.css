@@ -227,17 +227,16 @@ header{
 }
 
 .main-nav li a{
+    border-top: 2px solid transparent;
     transition: all 0.2s ease 0s;
-    color: black;
     text-decoration: none;
+    padding-top: 14px;
+    color: black;
 }
 
 .main-nav li a:hover{
-    border-top-style: solid;
-    border-color: var(--main-color);
-    border-width: 2px;
+    border-top-color: var(--main-color);
     color: var(--main-color);
-    padding-top: 14px;
 }
 
 .logo{
@@ -310,6 +309,7 @@ header{
     background-color: var(--main-color);
     color: white;
     border: 3px solid var(--main-color);
+    border-left: none;
     padding: 0 16px;
     font-size: 16px;
     border-radius: 0 15px 15px 0;
@@ -360,7 +360,7 @@ header{
 }
 
 .filter-btn:hover {
-    background-color: #deebff;
+    background-color: var(--filter-bg-color);
 }
 
 .search-info {
@@ -474,7 +474,13 @@ header{
     color: var(--main-color);
 }
 
+/****** Tablet ***********/
 @media (max-width: 1024px) {
+    .filters-label {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     .accommodation-and-popular {
         flex-direction: column;
         gap: 50px;
@@ -534,15 +540,10 @@ header{
     }
 }
 
+/****** Mobile ***********/
 @media (max-width: 768px) {
     html { 
         scroll-behavior: smooth; 
-    }
-
-    .main-container {
-        padding: 0;
-        margin: 0;
-        max-width: 100%;
     }
 
     body {
@@ -554,6 +555,12 @@ header{
         align-items: center;
         gap: 12px;
         margin-bottom: 20px;
+    }
+    
+    .main-container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
     }
 
     .logo{ 
@@ -617,6 +624,7 @@ header{
         width: 100%;
         max-width: none;
         height: 49px;
+        overflow: visible;
     }
 
     .search-form .search-btn {
@@ -626,7 +634,9 @@ header{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0 15px 15px 0;
+        border-radius: 15px;
+        box-shadow: 0 4px 5px 1px rgba(0,0,0,.35);
+        position: relative; z-index: 1;
     }
 
     .search-form .search-btn .btn-text {
@@ -667,10 +677,6 @@ header{
 
     .filter-btn i {
         margin-right: 8px;
-    }
-
-    .search-form button {
-        border-radius: 15px !important;
     }
 
     .accommodation-and-popular {
@@ -795,8 +801,8 @@ header{
     }
 }
 
-@media (max-width: 647px) {
+@media (max-width: 647px) { 
     .filter-btn {
-        width: 160px;
-    }
+        width: 160px; 
+    } 
 }
