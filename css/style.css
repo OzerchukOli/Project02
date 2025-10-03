@@ -285,6 +285,7 @@ header{
 }
 
 .search-form input {
+    min-width: 0;
     border: none;
     outline: none;
     font-size: 18px;
@@ -555,7 +556,7 @@ header{
     }
 
     .main-nav{
-        display: flex !important;
+        display: flex;
         justify-content: stretch;
         width: 100%;
         padding: 0;
@@ -565,26 +566,26 @@ header{
     }
 
     .main-nav li{
-        display: block !important;
+        display: block;
         flex: 1 1 0;
         text-align: center;
-        padding: 0 !important;
+        padding: 0;
     }
 
     .main-nav li a{
-        display: flex !important;
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 14px 0 !important;
+        padding: 14px 0;
         margin: 0;
         text-decoration: none;
         color: #000;
         font-weight: 400;
         border-bottom: 2px solid transparent;
         transition: color .2s, border-color .2s;
-        border-top: none !important;
-        padding-top: 14px !important;
+        border-top: none;
+        padding-top: 14px;
     }
 
     .main-nav li a:hover{
@@ -596,6 +597,11 @@ header{
         padding: 0 20px;
     }
 
+    .input-icon{
+        flex: 0 0 49px;
+        width: 49px;
+    }
+    
     .search-form {
         width: 100%;
         max-width: none;
@@ -604,8 +610,8 @@ header{
     }
 
     .search-form .search-btn {
+        flex: 0 0 49px;
         width: 49px;
-        min-width: 49px;
         padding: 0;
         display: inline-flex;
         align-items: center;
@@ -613,6 +619,8 @@ header{
         border-radius: 15px;
         box-shadow: 0 4px 5px 1px rgba(0,0,0,.35);
         position: relative; z-index: 1;
+        border: none;
+        box-sizing: border-box;
     }
 
     .search-form .search-btn .btn-text {
