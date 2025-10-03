@@ -49,6 +49,13 @@ html, body {
 
 .card-title {
     font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    margin: 0;
+    font-size: 14px;
 }
 
 .card-link {
@@ -68,7 +75,7 @@ html, body {
     font-weight: 700;
 }
 
-#neutralStar {
+.neutralStar {
     color: var(--main-bg-color)
 }
 
@@ -119,23 +126,16 @@ html, body {
     border-top-left-radius: 20px;
 }
 
-.accommodation-cards .card-content {
-    padding-left: 15px;
-    height: 83.25px;
+.card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.accommodation-cards .card-title {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-.accommodation-cards .card-subtitle {
-    margin: 0;
-    font-size: 14px;
+.accommodation-cards .card-content {
+    padding-left: 15px;
+    height: 83.25px;
 }
 
 .accommodation-cards .card-rating {
@@ -193,19 +193,6 @@ html, body {
     width: 67%;
     height: 146px;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.popular-cards .card-title {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-.popular-cards .card-subtitle {
-    margin: 0;
 }
 
 .popular-cards .card-rating {
@@ -523,11 +510,7 @@ header{
 
     .popular-cards .card-content {
         width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 100%;
-        box-sizing: border-box;
     }
 
     .popular-cards .card-txt {
@@ -739,24 +722,16 @@ header{
     }
 
     .accommodation-cards .card-content {
-        display: flex;
-        flex-direction: column;
         flex: 1;
         padding-bottom: 8px;
         width: auto;
-        justify-content: space-between;
-        box-sizing: border-box;
     }
 
     .popular-cards .card-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 146px;
         width: auto;
         flex: 1 1 auto;
         padding-left: 15px;
-        box-sizing: border-box;
     }
 
     .popular-cards .card-rating, 
