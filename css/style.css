@@ -777,7 +777,7 @@ header{
     }
 }
 
-@media (max-width: 647px) { 
+@media (max-width: 648px) { 
     .filter-btn {
         width: 160px; 
     } 
